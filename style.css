@@ -1,0 +1,258 @@
+/* PRESET PAGINA */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+:root{
+    --primary-color: #1C1C1C;
+    --secondary-color: #fff;
+    --third-color: transparent;
+    --for-color: #e78f0b;
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+
+/* ESTILOS GERAIS */
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+/*ESTILO HEADER*/
+header{
+    background-color: var(--primary-color);
+    height: 15rem;
+}
+
+.logotipo, .menu_desktop{
+    display: inline-block;
+    margin-right: -0.4rem;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+}
+
+.logotipo{
+    width: 20%;
+}
+
+.logotipo img{
+    width: 20rem;
+    max-width: 20rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu_desktop{
+    width: 80%;
+    transition: .5s;
+}
+
+.menu_desktop ul{
+    background-color: var(--for-color);
+    border-radius: 1rem;
+    height: 6rem;
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.menu_desktop ul li{
+    display: inline-block;
+    margin: 0 1.6rem;
+    padding-top: 0.90rem;
+}
+
+.menu_desktop ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+.menu_desktop ul li a:hover{
+    color: var(--secondary-color);
+}
+
+.menu_desktop ul li a button{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
+    width: 14rem;
+    height: 4rem;
+    border-radius: 2rem 0 2rem 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.menu_desktop ul li a button:hover{
+    background-color: var(--primary-color);
+    color: var(--for-color);
+    border-radius: 2rem;
+}
+
+.menu_desktop ul li button.tema{
+    padding: 1rem 1rem;
+    background-color: var(--third-color);
+    border: none;
+    font-size: 1.6rem;
+    color: #1C1C1C;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menu_desktop ul li button.tema:hover{
+    transform: scale(1.4);
+}
+
+/* ESTILO TOPO-SITE */
+section.topo-site{
+    padding: 8rem 2%;
+}
+
+.topo-site-align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-topo, .img-topo{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -0.4rem;
+}
+
+.txt-topo h1{
+    color: var(--for-color);
+    font-size: 3.8rem;
+    line-height: 6rem;
+}
+
+.txt-topo h1 span{
+    display: block;
+}
+
+.txt-topo p{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 3rem 0;
+}
+
+.txt-topo a button{
+    width: 24rem;
+    height: 7rem;
+    font-size: 1.8rem;
+    color: var(--for-color);
+    cursor: pointer;
+    background-color: var(--third-color);
+    border: 0.2rem solid var(--for-color);
+    border-radius: 4rem 0 4rem 0;
+    transition: .3s;
+}
+
+.txt-topo a button:hover{
+    background-color: var(--for-color);
+    color: var(--primary-color);
+    border-radius: 4rem;
+}
+
+.img-topo{
+    margin: 0 auto;
+}
+
+.img-topo img{
+    width: 100%;
+    max-width: 60rem;
+}
+
+
+/* ESTILO SKILLS */
+.skills{
+    padding: 8rem 2%;
+}
+
+.skills .titulo-skills{
+    text-align: center;
+}
+
+.skills .titulo-skills h2{
+    color: var(--for-color);
+    font-size: 4rem;
+    margin-bottom: 10rem;
+}
+
+.skills-container{
+    width: 100%;
+}
+
+.skills .skills-box{
+    display: inline-block;
+    width: 23%;
+    margin: 0 2rem;
+    border: 0.2rem solid var(--for-color);
+    border-radius: 0 5rem 3rem 5rem;
+    margin-right: -0.4rem;
+    text-align: center;
+    padding: 8rem 4%;
+    transition: .2s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.skills .skills-box:hover{
+    transform: scale(1.1);
+    background-color: var(--for-color);
+}
+
+.skills .skills-box img{
+    max-width: 20rem;
+    transition: .2s;
+    transform-style: preserve-3d;
+}
+
+.skills .skills-box:hover img{
+    filter:drop-shadow(0 0 1rem #1C1C1C);
+    transform: translate3d(0,0,100px);
+}
+
+.skills .skills-box h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--for-color);
+    transition: .2s;
+    transform-style: preserve-3d;
+}
+
+.skills .skills-box:hover h1{
+    color: var(--primary-color);
+    transform: translate3d(0,0,100px);
+}
+
+.skills .skills-box p{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transform-style: preserve-3d;
+    transition: .2s;
+}
+
+.skills .skills-box:hover p{
+    transform: translate3d(0,0,100px);
+}
